@@ -196,7 +196,7 @@ p {
 .button.hero-btn:focus {
   background-color: var(--pressed-state-color);
 }
-/* Секція 2 */
+/* Секція 1 */
 .section-title,
 .section-team-title,
 .section-customers-title {
@@ -216,8 +216,8 @@ p {
   justify-content: center;
   height: 112px;
   background-color: var(--background-section-color);
-  box-sizing: 4px;
   margin-bottom: 8px;
+  border-radius: 4px;
 }
 
 .advantages {
