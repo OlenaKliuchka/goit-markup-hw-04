@@ -18,6 +18,8 @@ html {
   --background-dark-color: #2e2f42;
   --background-white-color: #ffffff;
   --subtle-text: #8e8f99;
+  --link-icon-color: #afb1b8;
+  --secondary-link-icon-color: #31d0aa;
 }
 
 body {
@@ -63,6 +65,8 @@ p {
 
 .page-header {
   border-bottom: 1px solid var(--accent-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   max-height: 72px;
 }
 
@@ -142,6 +146,7 @@ p {
   padding-bottom: 188px;
   margin: 0 auto;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   background-color: var(--background-dark-color);
   background-image: linear-gradient(
@@ -200,20 +205,21 @@ p {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.feature-icon {
-  display: block;
-  width: 264px;
+.adv-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 112px;
-  padding: 24px 100px;
+  background-color: var(--background-section-color);
+  box-sizing: 4px;
   margin-bottom: 8px;
-  background: var(--background-section-color);
-  border-radius: 4px;
 }
+
 .advantages {
   display: flex;
   gap: 24px;
@@ -285,16 +291,14 @@ p {
 }
 .section-team-card {
   background: var(--background-white-color);
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
   background-color: var(--background-white-color);
 }
 .card-team {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 32px 0;
 
   text-align: center;
   border-radius: 0px 0px 4px 4px;
@@ -307,8 +311,16 @@ p {
   justify-content: center;
   gap: 24px;
 }
-.social-list-link {
+.social-list-icon {
+  display: block;
+  fill: var(--background-section-color);
+}
+
+.social-list-link,
+.footer-social-list-link {
   display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -317,15 +329,28 @@ p {
   border-radius: 50%;
   background-color: var(--primary-brand-color);
 }
-
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--pressed-state-color);
+}
 /* Секція 4 */
-.customers-icon {
-  display: block;
+.customers-list-link {
+  display: flex;
   width: 168px;
   height: 88px;
-  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
+  color: var(--link-icon-color);
+}
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border-color: var(--pressed-state-color);
+  color: var(--pressed-state-color);
+}
+.customers-icon {
+  fill: currentColor;
 }
 .customers-list {
   display: flex;
@@ -344,9 +369,17 @@ p {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
+  gap: 120px;
 }
-.footer-one-part {
-  margin-right: 120px;
+.social-list-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  background-color: var(--secondary-link-icon-color);
 }
 .footer-logo {
   display: inline-block;
@@ -364,6 +397,13 @@ p {
   gap: 16px;
 }
 .footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: var(--background-white-color);
   margin-bottom: 16px;
 }
 /* Портфоліо */
@@ -403,7 +443,11 @@ p {
 .services-list {
   width: 360px;
 }
-.services-list:hover {
+.services-link {
+  display: block;
+}
+.services-link:hover,
+.services-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
