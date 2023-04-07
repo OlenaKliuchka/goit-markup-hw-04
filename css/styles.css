@@ -62,12 +62,14 @@ p {
 }
 
 /* Шапка */
+/*=============================================
+=            Section comment block            =
+=============================================*/
 
 .page-header {
   border-bottom: 1px solid var(--accent-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  max-height: 72px;
 }
 
 /* Логотип */
@@ -140,6 +142,9 @@ p {
 
 /* Секція герой */
 
+/*=============================================
+=            Section comment block            =
+=============================================*/
 .hero {
   max-width: 1440px;
   padding-top: 188px;
@@ -153,7 +158,7 @@ p {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('/images/people-office.jpg');
+    url(../images/gero-images/people-office.jpg);
 }
 .hero-title {
   margin-top: 0;
@@ -183,7 +188,6 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
   letter-spacing: 0.04em;
   cursor: pointer;
 }
@@ -191,11 +195,18 @@ p {
 .button.hero-btn {
   border: none;
   margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button.hero-btn:hover,
 .button.hero-btn:focus {
   background-color: var(--pressed-state-color);
 }
+
+/*=====  End of Section comment block  ======*/
+
+/*=============================================
+=            Section comment block            =
+=============================================*/
 /* Секція 1 */
 .section-title,
 .section-team-title,
@@ -271,6 +282,11 @@ p {
 .services-text {
   color: var(--body-text-color);
 }
+/*=====  End of Section comment block  ======*/
+
+/*=============================================
+=            Section comment block            =
+=============================================*/
 
 /* Секція 2 */
 .section-doing {
@@ -281,12 +297,16 @@ p {
   display: flex;
   gap: 24px;
 }
+/*=====  End of Section comment block  ======*/
+
+/*=============================================
+=            Section comment block            =
+=============================================*/
+
 /* Секція 3 */
 .section-team {
-  width: 1440px;
   padding-top: 120px;
   padding-bottom: 120px;
-  margin: 0 auto;
   background-color: var(--background-section-color);
 }
 .section-team-card {
@@ -333,6 +353,13 @@ p {
 .social-list-link:focus {
   background-color: var(--pressed-state-color);
 }
+
+/*=====  End of Section comment block  ======*/
+
+/*=============================================
+=            Section comment block            =
+=============================================*/
+
 /* Секція 4 */
 .customers-list-link {
   display: flex;
@@ -357,12 +384,11 @@ p {
   justify-content: center;
   gap: 24px;
 }
+/*=====  End of Section comment block  ======*/
 /* футер */
 .footer {
-  width: 1440px;
   padding-top: 100px;
   padding-bottom: 100px;
-  margin: 0 auto;
 
   background-color: var(--background-dark-color);
   color: var(--background-section-color);
@@ -406,6 +432,9 @@ p {
   color: var(--background-white-color);
   margin-bottom: 16px;
 }
+
+/*=====  End of Section comment block  ======*/
+
 /* Портфоліо */
 .section-portfolio {
   padding: 96px 0 120px 0;
